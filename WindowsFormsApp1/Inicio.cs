@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             Formulario.TopLevel = false;
             Formulario.FormBorderStyle = FormBorderStyle.None;
             Formulario.Dock = DockStyle.Fill;
-            Formulario.BackColor = Color.Violet;
+            Formulario.BackColor = Color.DarkCyan;
 
             Contenedor.Controls.Add(Formulario);
             Formulario.Show();

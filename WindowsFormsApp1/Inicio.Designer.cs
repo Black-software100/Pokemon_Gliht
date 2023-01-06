@@ -185,7 +185,7 @@
             this.SubmenuRegistra.IconColor = System.Drawing.Color.Black;
             this.SubmenuRegistra.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SubmenuRegistra.Name = "SubmenuRegistra";
-            this.SubmenuRegistra.Size = new System.Drawing.Size(180, 22);
+            this.SubmenuRegistra.Size = new System.Drawing.Size(129, 22);
             this.SubmenuRegistra.Text = "Registrar";
             this.SubmenuRegistra.Click += new System.EventHandler(this.SubmenuRegistra_Click);
             // 
@@ -195,7 +195,7 @@
             this.SubmenuVerFetalle.IconColor = System.Drawing.Color.Black;
             this.SubmenuVerFetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SubmenuVerFetalle.Name = "SubmenuVerFetalle";
-            this.SubmenuVerFetalle.Size = new System.Drawing.Size(180, 22);
+            this.SubmenuVerFetalle.Size = new System.Drawing.Size(129, 22);
             this.SubmenuVerFetalle.Text = "Ver Detalle";
             this.SubmenuVerFetalle.Click += new System.EventHandler(this.SubmenuVerFetalle_Click);
             // 
