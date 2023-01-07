@@ -66,6 +66,7 @@
             this.TxtDocumento.ShortcutsEnabled = false;
             this.TxtDocumento.Size = new System.Drawing.Size(266, 20);
             this.TxtDocumento.TabIndex = 2;
+            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumento_KeyPress);
             // 
             // label3
             // 

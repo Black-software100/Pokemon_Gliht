@@ -46,6 +46,9 @@ namespace WindowsFormsApp1
             this.Show();
         }
 
-
+        private void TxtDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.Solonumero(e);
+        }
     }
 }

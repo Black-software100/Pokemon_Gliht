@@ -18,3 +18,4 @@ C:\Users\juane\OneDrive\Documentos\CapaPresentacion\WindowsFormsApp1\bin\Debug\C
 C:\Users\juane\OneDrive\Documentos\CapaPresentacion\WindowsFormsApp1\bin\Debug\CapaNegocio.pdb
 C:\Users\juane\OneDrive\Documentos\CapaPresentacion\WindowsFormsApp1\bin\Debug\CapaDatos.pdb
 C:\Users\juane\OneDrive\Documentos\CapaPresentacion\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Inicio.resources
+C:\Users\juane\OneDrive\Documentos\CapaPresentacion\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmUsuarios.resources

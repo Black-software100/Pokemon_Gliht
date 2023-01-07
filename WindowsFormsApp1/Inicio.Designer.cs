@@ -58,7 +58,7 @@
             this.MenuNombre.Location = new System.Drawing.Point(0, 0);
             this.MenuNombre.Name = "MenuNombre";
             this.MenuNombre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.MenuNombre.Size = new System.Drawing.Size(1046, 74);
+            this.MenuNombre.Size = new System.Drawing.Size(1182, 74);
             this.MenuNombre.TabIndex = 2;
             this.MenuNombre.Text = "menuStrip2";
             // 
@@ -76,7 +76,7 @@
             this.MnuAcercaDe});
             this.Menu.Location = new System.Drawing.Point(0, 74);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(1046, 73);
+            this.Menu.Size = new System.Drawing.Size(1182, 73);
             this.Menu.TabIndex = 3;
             this.Menu.Text = "menuStrip1";
             // 
@@ -266,11 +266,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkCyan;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(708, 36);
+            this.label2.Location = new System.Drawing.Point(834, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
+            this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Usuario:";
             // 
@@ -278,11 +278,11 @@
             // 
             this.LblUsuario.AutoSize = true;
             this.LblUsuario.BackColor = System.Drawing.Color.DarkCyan;
-            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsuario.ForeColor = System.Drawing.Color.White;
-            this.LblUsuario.Location = new System.Drawing.Point(771, 36);
+            this.LblUsuario.Location = new System.Drawing.Point(932, 27);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(72, 16);
+            this.LblUsuario.Size = new System.Drawing.Size(115, 25);
             this.LblUsuario.TabIndex = 6;
             this.LblUsuario.Text = "LblUsuario";
             // 
@@ -291,14 +291,14 @@
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Contenedor.Location = new System.Drawing.Point(0, 147);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1046, 428);
+            this.Contenedor.Size = new System.Drawing.Size(1182, 571);
             this.Contenedor.TabIndex = 7;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 575);
+            this.ClientSize = new System.Drawing.Size(1182, 718);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.LblUsuario);
             this.Controls.Add(this.label2);

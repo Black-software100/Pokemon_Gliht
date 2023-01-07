@@ -16,5 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void TbxDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validacion.Solonumero(e);
+        }
     }
 }
