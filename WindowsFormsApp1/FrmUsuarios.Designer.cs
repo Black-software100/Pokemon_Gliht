@@ -51,8 +51,13 @@
             this.BtnEditar = new FontAwesome.Sharp.IconButton();
             this.BtnEliminar = new FontAwesome.Sharp.IconButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.DVGData = new System.Windows.Forms.DataGridView();
-            this.BtnSeleccionar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DvgData = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CbxBusqueda = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnBuscar = new FontAwesome.Sharp.IconButton();
+            this.BtnLimpiar = new FontAwesome.Sharp.IconButton();
+            this.btn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCompleto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +67,7 @@
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DVGData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DvgData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -237,6 +242,7 @@
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnEditar
             // 
@@ -280,13 +286,14 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(283, 47);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(871, 36);
+            this.label10.Size = new System.Drawing.Size(871, 60);
             this.label10.TabIndex = 20;
             this.label10.Text = "Lista de usuario:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // DVGData
+            // DvgData
             // 
-            this.DVGData.AllowUserToAddRows = false;
+            this.DvgData.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,10 +302,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DVGData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DVGData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DVGData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BtnSeleccionar,
+            this.DvgData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DvgData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DvgData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btn,
             this.IdUsuario,
             this.NroDocumento,
             this.NombreCompleto,
@@ -308,9 +315,9 @@
             this.Rol,
             this.Estado,
             this.EstadoValor});
-            this.DVGData.Location = new System.Drawing.Point(289, 94);
-            this.DVGData.Name = "DVGData";
-            this.DVGData.ReadOnly = true;
+            this.DvgData.Location = new System.Drawing.Point(289, 119);
+            this.DvgData.Name = "DvgData";
+            this.DvgData.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,16 +325,71 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkCyan;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DVGData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DVGData.Size = new System.Drawing.Size(865, 437);
-            this.DVGData.TabIndex = 21;
+            this.DvgData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DvgData.Size = new System.Drawing.Size(865, 437);
+            this.DvgData.TabIndex = 21;
             // 
-            // BtnSeleccionar
+            // label11
             // 
-            this.BtnSeleccionar.HeaderText = "";
-            this.BtnSeleccionar.Name = "BtnSeleccionar";
-            this.BtnSeleccionar.ReadOnly = true;
-            this.BtnSeleccionar.Width = 30;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(692, 70);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Buscar por:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CbxBusqueda
+            // 
+            this.CbxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbxBusqueda.FormattingEnabled = true;
+            this.CbxBusqueda.Location = new System.Drawing.Point(759, 64);
+            this.CbxBusqueda.Name = "CbxBusqueda";
+            this.CbxBusqueda.Size = new System.Drawing.Size(114, 21);
+            this.CbxBusqueda.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(879, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.TabIndex = 24;
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.White;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.IconChar = FontAwesome.Sharp.IconChar.SearchPlus;
+            this.BtnBuscar.IconColor = System.Drawing.Color.Black;
+            this.BtnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnBuscar.IconSize = 18;
+            this.BtnBuscar.Location = new System.Drawing.Point(1046, 60);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(45, 26);
+            this.BtnBuscar.TabIndex = 25;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.BackColor = System.Drawing.Color.White;
+            this.BtnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.BtnLimpiar.IconColor = System.Drawing.Color.Black;
+            this.BtnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnLimpiar.IconSize = 18;
+            this.BtnLimpiar.Location = new System.Drawing.Point(1097, 60);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(45, 26);
+            this.BtnLimpiar.TabIndex = 26;
+            this.BtnLimpiar.UseVisualStyleBackColor = false;
+            // 
+            // btn
+            // 
+            this.btn.HeaderText = "";
+            this.btn.Name = "btn";
+            this.btn.ReadOnly = true;
+            this.btn.Width = 30;
             // 
             // IdUsuario
             // 
@@ -398,7 +460,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1210, 607);
-            this.Controls.Add(this.DVGData);
+            this.Controls.Add(this.BtnLimpiar);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CbxBusqueda);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.DvgData);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
@@ -423,7 +490,7 @@
             this.Name = "FrmUsuarios";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DVGData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DvgData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,8 +519,13 @@
         private FontAwesome.Sharp.IconButton BtnEditar;
         private FontAwesome.Sharp.IconButton BtnEliminar;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView DVGData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BtnSeleccionar;
+        private System.Windows.Forms.DataGridView DvgData;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox CbxBusqueda;
+        private System.Windows.Forms.TextBox textBox1;
+        private FontAwesome.Sharp.IconButton BtnBuscar;
+        private FontAwesome.Sharp.IconButton BtnLimpiar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn btn;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroDocumento;
         private System.Windows.Forms.DataGridViewTextBoxColumn NombreCompleto;
