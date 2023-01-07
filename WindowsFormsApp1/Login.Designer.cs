@@ -53,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(332, 37);
+            this.label2.Location = new System.Drawing.Point(332, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 18);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // TxtDocumento
             // 
-            this.TxtDocumento.Location = new System.Drawing.Point(329, 63);
+            this.TxtDocumento.Location = new System.Drawing.Point(329, 72);
             this.TxtDocumento.Name = "TxtDocumento";
             this.TxtDocumento.ShortcutsEnabled = false;
             this.TxtDocumento.Size = new System.Drawing.Size(266, 20);
@@ -81,6 +81,8 @@
             // BtnIngresar
             // 
             this.BtnIngresar.BackColor = System.Drawing.Color.DarkCyan;
+            this.BtnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.ForeColor = System.Drawing.Color.White;
             this.BtnIngresar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
             this.BtnIngresar.IconColor = System.Drawing.Color.White;
@@ -98,6 +100,8 @@
             // BtnCancelar
             // 
             this.BtnCancelar.BackColor = System.Drawing.Color.Red;
+            this.BtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
             this.BtnCancelar.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
             this.BtnCancelar.IconColor = System.Drawing.Color.White;
@@ -142,6 +146,7 @@
             // 
             this.TxtClave.Location = new System.Drawing.Point(329, 150);
             this.TxtClave.Name = "TxtClave";
+            this.TxtClave.PasswordChar = '*';
             this.TxtClave.ShortcutsEnabled = false;
             this.TxtClave.Size = new System.Drawing.Size(266, 20);
             this.TxtClave.TabIndex = 9;

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TbxCampo = new System.Windows.Forms.TextBox();
@@ -92,6 +94,7 @@
             this.TbxCampo.Size = new System.Drawing.Size(26, 20);
             this.TbxCampo.TabIndex = 2;
             this.TbxCampo.Text = "0";
+            this.TbxCampo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TbxCampo_KeyPress);
             // 
             // label3
             // 
@@ -181,6 +184,7 @@
             // 
             // CbxRol
             // 
+            this.CbxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxRol.FormattingEnabled = true;
             this.CbxRol.Location = new System.Drawing.Point(38, 317);
             this.CbxRol.Name = "CbxRol";
@@ -209,6 +213,7 @@
             // 
             // CbxEstado
             // 
+            this.CbxEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxEstado.FormattingEnabled = true;
             this.CbxEstado.Location = new System.Drawing.Point(38, 370);
             this.CbxEstado.Name = "CbxEstado";
@@ -282,6 +287,15 @@
             // DVGData
             // 
             this.DVGData.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DVGData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DVGData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DVGData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BtnSeleccionar,
@@ -297,6 +311,14 @@
             this.DVGData.Location = new System.Drawing.Point(289, 94);
             this.DVGData.Name = "DVGData";
             this.DVGData.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DVGData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DVGData.Size = new System.Drawing.Size(865, 437);
             this.DVGData.TabIndex = 21;
             // 
@@ -399,7 +421,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmUsuarios";
-            this.Text = "FrmUsuarios";
+            this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DVGData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

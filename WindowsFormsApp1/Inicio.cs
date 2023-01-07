@@ -34,10 +34,10 @@ namespace WindowsFormsApp1
             {
                 bool Encontrado = ListaPermisos.Any(m => m.NombreMenu == iconMenu.Name);
 
-                //if(Encontrado == false)
-                //{
-                 //   iconMenu.Visible= false;
-               // }
+                if(Encontrado == false)
+                {
+                    iconMenu.Visible= false;
+                }
             }
            
             LblUsuario.Text = usuarioActual.NombreCompleto;
@@ -95,6 +95,7 @@ namespace WindowsFormsApp1
 
         private void SubmenuRegistra_Click(object sender, EventArgs e)
         {
+            AbrirFormulario((IconMenuItem)sender, new FrmCompras());
 
         }
 
