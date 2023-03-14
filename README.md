@@ -1,2 +1,1 @@
-# sistema_venta
- 
+# Pokemon Gliht
