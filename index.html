@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link  rel="preload" as="style" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Gliht Pokemon</title>
 </head>
 <body>
+    <script defer  src="../js/jQuery.js"></script>
+    <script defer src="../js/main.js"></script>
     <section class="container">
+        <h1>Poke glish</h1>
+        <p>
+            Esta aplicacion permite saber si puedes utilizar el glihs de gran encanto para la catura de pokemons shany.
+        </p>
         <div class="card">
         
             <section class="idnormal">
@@ -23,16 +30,16 @@
                 <label> ID oculto:</label> 
                 <input type="number" id="id_oculto" maxlength="5"/>
             </section>
+
             <br>
-            <section class="button">
+            <section class="ContenedorButton">
                 <button type="button" id="btn_calc" value="Calcular" >Calcular</button>
             </section>
             <br>
         </div>
         <br>
-        <Table id="mensajes"></Table>
+        <Table class="tabla" id="mensajes"></Table>
     </section>
-    <script src="jQuery.js"></script>
-    <script src="main.js"></script>
+
 </body>
 </html>
